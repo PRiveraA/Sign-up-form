@@ -1,0 +1,50 @@
+body {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: gray;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.left {
+  width: 35%;
+  background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  background-position: 30% center;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+h1 {
+  font-family: "Orbitron";
+  color: rgb(225, 225, 225);
+  display: flex;
+  margin-top: 9rem;
+}
+
+.right {
+  background-color: white;
+  height: 100%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right div {
+  border: 1px solid black;
+  /* Makes elements grow evenly */
+  flex: 1;
+}
