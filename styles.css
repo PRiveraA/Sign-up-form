@@ -28,11 +28,21 @@ body {
   align-items: top;
 }
 
-h1 {
+.title-background {
+  height: 9rem;
+  background-color: rgba(0, 0, 0, 0.47);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+}
+
+.left h1 {
   font-family: "Orbitron";
   color: rgb(225, 225, 225);
-  display: flex;
-  margin-top: 9rem;
+  text-align: center;
+  font-size: 3rem;
 }
 
 .right {
