@@ -77,10 +77,10 @@ body {
 
 .r-top {
   font-family: sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 590;
   align-items: end;
-  color: rgba(0, 0, 0, 0.850);
+  color: rgba(0, 0, 0, 0.900);
 }
 
 form {
@@ -97,10 +97,10 @@ h1 {
   line-height: normal;
   color: inherit;
   font-family: sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 590;
   margin-bottom: 1.3rem;
-  color: rgba(0, 0, 0, 0.850);
+  color: rgba(0, 0, 0, 0.900);
 }
 
 .r-center div {
