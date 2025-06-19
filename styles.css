@@ -39,10 +39,17 @@ body {
 }
 
 .left h1 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+  line-height: normal;
+  color: inherit;
   font-family: "Orbitron";
   color: rgb(225, 225, 225);
   text-align: center;
   font-size: 3rem;
+  font-weight: 400;
 }
 
 .right {
@@ -53,8 +60,92 @@ body {
   flex-direction: column;
 }
 
-.right div {
-  border: 1px solid black;
+.right>div {
+  padding-left: 2rem;
+}
+
+.right p {
+  padding-bottom: 2rem;
+}
+
+.right>div {
+  border-bottom: 1px solid black;
   /* Makes elements grow evenly */
   flex: 1;
+  display: flex;
+}
+
+.r-top {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  font-weight: 590;
+  align-items: end;
+  color: rgba(0, 0, 0, 0.850);
+}
+
+form {
+  margin-top: 1rem;
+  min-width: 35rem;
+  height: fit-content;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+  line-height: normal;
+  color: inherit;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  font-weight: 590;
+  margin-bottom: 1.3rem;
+  color: rgba(0, 0, 0, 0.850);
+}
+
+.r-center div {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  color: rgba(0, 0, 0, 0.682);
+}
+
+form label {
+  display: block;
+}
+
+form>section>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+form input {
+  width: 14rem;
+  height: 1.8rem;
+}
+
+section div {
+  margin-bottom: 0.6rem;
+}
+
+input:invalid {
+  border: 1px solid rgb(222, 0, 0);
+  border-radius: 3px;
+}
+
+input:focus {
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  background: none;
+  color: inherit;
+  outline: none;
+  box-shadow: none;
+  appearance: none;
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(45, 45, 221);
+  border-radius: 3px;
 }
