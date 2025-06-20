@@ -3,7 +3,8 @@ body {
   background-color: black;
   display: flex;
   align-items: center;
-  width: 100%;
+  margin: 0;
+
 }
 
 * {
@@ -24,8 +25,9 @@ body {
   background-size: cover;
   background-position: 30% center;
   display: flex;
-  justify-content: center;
-  align-items: top;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title-background {
@@ -36,6 +38,12 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 12rem;
+}
+
+.left>p {
+  color: rgb(208, 208, 208);
+  font-size: 0.85rem;
+  font-family: sans-serif;
 }
 
 .left h1 {
@@ -53,7 +61,7 @@ body {
 }
 
 .right {
-  background-color: white;
+  background-color: rgb(250, 250, 250);
   height: 100%;
   width: 65%;
   display: flex;
@@ -69,7 +77,6 @@ body {
 }
 
 .right>div {
-  border-bottom: 1px solid black;
   /* Makes elements grow evenly */
   flex: 1;
   display: flex;
@@ -123,6 +130,8 @@ form>section>div {
 form input {
   width: 14rem;
   height: 1.8rem;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 5px;
 }
 
 section div {
@@ -148,4 +157,40 @@ input:focus {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   border: 1px solid rgb(45, 45, 221);
   border-radius: 3px;
+}
+
+.r-center {
+  background-color: white;
+  flex: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.241);
+  max-height: fit-content;
+  padding-bottom: 1rem;
+}
+
+.r-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: start;
+}
+
+button {
+  margin-top: 2rem;
+  font-size: 1.03rem;
+  border: 0;
+  background-color: rgb(89, 109, 72);
+  border-radius: 8px;
+  color: rgb(247, 247, 247);
+  padding: 0.8rem 3rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.r-bottom p {
+  font-family: sans-serif;
+  color: black;
+  padding-top: 0.5rem;
+}
+
+.r-bottom strong {
+  color: rgb(89, 109, 72);
 }
